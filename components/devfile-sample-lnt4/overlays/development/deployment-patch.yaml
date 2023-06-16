@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-lnt4
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads-stage/jhutar-tenant/my-app/devfile-sample-lnt4@sha256:3548993cf98ffc5a7539d2f6f682a368ee516f7150ba61411906b4258ce4f43d
+        name: my-nodejs
+        resources: {}
+status: {}
